@@ -8,6 +8,9 @@ COPY package.json .
 COPY *.js .
 RUN npm install
 USER expense
+EXPOSE 8081
+RUN echo "Helo World"
+RUN echo "Hello docker"
 CMD ["node", "index.js"]
 
 
