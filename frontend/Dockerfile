@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:mainline-alpine3.23
 RUN rm -rf /etc/nginx/conf.d/default.conf && \ 
     mkdir -p /var/cache/nginx/client_temp && \
     mkdir -p /var/cache/nginx/proxy_temp && \
